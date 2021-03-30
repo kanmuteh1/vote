@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rank</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <style>
+        main{
+               padding-bottom: 2em;
+               display: grid;
+               justify-content: center;
+           }
+   
+           #nav-bar{
+               text-align: center;
+           }
+   
+           #nav-bar a{
+               text-transform: capitalize;
+           }
+   
+           .h2{
+               text-align: center;
+           }
+   
+           #display-contestant{
+               text-align: center;
+           }
+   
+           thead th {
+               background: gray;
+               font-size: 1.2em;
+           }
+   
+           tbody td{
+               padding: 6px 20px;
+           }
+   
+           tr:nth-child(odd) {
+               background-color: #dddddd;
+           }
+   </style>
+   <body>
+       <header id="nav-bar">
+           <a href="contestants.html">Contestants</a>
+           <a href="rank.html">Rank</a>
+       </header>
+       <main>
+           <div class="h2">
+               <h2><b><u>Rank</u></b></h2>
+            </div>
+           <div id="display-polls">
+               <table>
+                   <thead>
+                       <th>ID</th>
+                       <th>Image</th>
+                       <th>Name</th>
+                       <th>Vote</th>
+                   </thead>
+                   <tbody id="ranking">
+                   </tbody>
+               </table>
+           </div>
+       </main>
+       <script src="vote.js"></script>
+</body>
+</html>

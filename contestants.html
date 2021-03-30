@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contestants</title>
+</head>
+<style>
+     main{
+            padding-bottom: 2em;
+            display: grid;
+            justify-content: center;
+        }
+
+        #nav-bar{
+            text-align: center;
+        }
+
+        #nav-bar a{
+            text-transform: capitalize;
+        }
+
+        .h2{
+            text-align: center;
+        }
+
+        #display-contestant{
+            text-align: center;
+        }
+
+        thead th {
+            background: gray;
+            font-size: 1.2em;
+        }
+
+        tbody td{
+            padding: 6px 20px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #dddddd;
+        }
+</style>
+<body>
+    <header id="nav-bar">
+        <a href="contestants.html">Contestants</a>
+        <a href="rank.html">Rank</a>
+    </header>
+    <main>
+        <div id="create-contestant">
+            <label for="full-name">Name</label>
+            <input type="text" placeholder="John Brown" id="full-name">
+            <br><br>
+            <label for="image">Image</label>
+            <input type="text" placeholder="contestants.jpeg" id="image">
+            <br>
+            <input type="submit" value="Create Contestant" onclick="createContestant()" id="submit">
+        </div>
+        <div class="h2"><h2><b><u>contestants</u></b></h2></div>
+        <div id="display-contestant">
+            <table>
+                <thead>
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Vote</th>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="voting-area">
+            <input type="submit" value="Cast Vote" onclick="voting()">
+        </div>
+    </main>
+    <script src="vote.js"></script>
+</body>
+</html>
